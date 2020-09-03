@@ -7,10 +7,6 @@ class Stock_scaler:
         self.dataframe = dataframe
         self.logic = logic
 
-    def fix_data(self):
-        self.dataframe.set_index('Date', inplace=True)
-        self.dataframe.index = pd.to_datetime(self.dataframe.index)
-
     def weekly_data(self):
         self.dataframe.set_index('Date', inplace=True)
         self.dataframe.index = pd.to_datetime(self.dataframe.index)
